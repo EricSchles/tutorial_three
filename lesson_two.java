@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class lesson_two{
 	public static <T> void print(T input){
 		System.out.println(input);
@@ -31,5 +33,12 @@ class lesson_two{
 			print(elem);
 			//skips even elements all together
 		}	
+
+		ArrayList list = new ArrayList();
+		for(int i = 0;i < 100;i++){list.add(i);}
+		print(list);
+		//or
+		for(Object elem : list){ print(elem);}
+
 	}
 }
