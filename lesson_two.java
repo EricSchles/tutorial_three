@@ -22,6 +22,14 @@ class lesson_two{
 			} else{
 				print(elem);
 			}
+		}
+
+		for(int elem : numbers){
+			if(elem%2==0){
+				continue;
+			}
+			print(elem);
+			//skips even elements all together
 		}	
 	}
 }
