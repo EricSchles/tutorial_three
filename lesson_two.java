@@ -13,6 +13,15 @@ class lesson_two{
 		int[] numbers = {1,2,3,4,5,6,7,8,9,10};
 		for(int elem: numbers){
 			print(elem);
-		}
+		}//prints all the elements
+
+		//breaking out of a for loop prematurely
+		for(int elem: numbers){
+			if(elem%2==0){
+				break;
+			} else{
+				print(elem);
+			}
+		}	
 	}
 }
