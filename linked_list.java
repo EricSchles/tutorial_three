@@ -36,7 +36,6 @@ public class linked_list{
 		} else{
 				
 				while(cur.next != null){
-					print("got here");	
 					cur = cur.next;
 				}
 			
@@ -50,8 +49,8 @@ public class linked_list{
 		String result = "";
 		Node cur = this.getHead();
 		while(cur.data != null){
-			print("got here");
 			result += " " +cur.data.toString();
+			cur = cur.next;
 		}
 		return result;
 	}
