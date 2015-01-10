@@ -49,7 +49,7 @@ public class linked_list{
 		String result = "";
 		Node cur = this.getHead();
 		while(cur.data != null){
-			result += " " +cur.data.toString();
+			result += " " +cur.data;
 			cur = cur.next;
 		}
 		return result;
