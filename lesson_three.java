@@ -6,6 +6,14 @@ class lesson_three{
 		System.out.println(input);
 	}
 
+	public static boolean isDigit(String str){
+		try{
+			int d = Integer.parseInt(str);
+		}catch(NumberFormatException nfe){
+			return false;
+		}
+		return true;
+	}
 	public static void main(String[] args){
 		
 		print("Please enter a number, must be less than 10 (can be negative)\n");
@@ -20,5 +28,9 @@ class lesson_three{
 			print(x);
 			x += 1;
 		}
+
+		print("Please enter values and then the terminal value 'a'.  These values will be printed for you.");
+		Scanner n = new Scanner(System.in);
+
 	}
 }
