@@ -1,5 +1,4 @@
-import java.util.Scanner;
-
+import java.util.*;
 class lesson_three{
 
 	public static <T> void print(T input){
@@ -28,9 +27,22 @@ class lesson_three{
 			print(x);
 			x += 1;
 		}
-
+		n.nextLine();//throws away next line
 		print("Please enter values and then the terminal value 'a'.  These values will be printed for you.");
-		Scanner n = new Scanner(System.in);
-
+		ArrayList ll = new ArrayList();
+		String next_line = n.nextLine();
+		do{
+			if( isDigit(next_line) ){
+				ll.add(next_line);
+			}else if(next_line.contains("a") ){
+				print(ll);
+				print("Thanks for playing!");
+				break;
+			}else{
+				print("You entered a character I didn't understand");
+				break;
+			}
+			next_line = n.nextLine();
+		}while(true);
 	}
 }
